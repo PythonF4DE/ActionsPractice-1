@@ -1,0 +1,10 @@
+name: First Workflow Practice
+on:  workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a message
+        run: echo "Hello from GitHub actions"
+      - name: Print two variables
+        run: echo "Today is $(date) and this message is sent from ${{ runner.os }}"
