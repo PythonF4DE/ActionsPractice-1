@@ -1,5 +1,8 @@
 name: First Workflow Practice
-on:  workflow_dispatch
+on:
+  workflow_dispatch:
+    branches:
+      main
 jobs:
   first-job:
     runs-on: ubuntu-latest
