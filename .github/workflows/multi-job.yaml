@@ -1,0 +1,19 @@
+name: Workflow with multiple jobs
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message 1
+        run: echo "Print the first message"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message 2
+        run: echo "Print the second message"
+  third-job:
+    needs: first-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message 3
+        run: echo "Since you can see this message that means that job 1 did not fail"
