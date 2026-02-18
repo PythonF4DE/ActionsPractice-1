@@ -8,4 +8,5 @@ jobs:
         run: echo "Hello from GitHub actions"
       - name: Print two variables
         run: |
-          echo "Today is $(date) and this message is sent from ${{ runner.os }}"
+          echo "Today is $(date)"
+          echo "This message is sent from ${{ runner.os }}"
