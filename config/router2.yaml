@@ -1,0 +1,26 @@
+potion_metadata:
+  name: "Liquid Moonlight"
+  potency_level: 8
+  shelf_life: "2 Lunar Cycles"
+
+ingredients:
+  base: "Distilled Glacier Water"
+  reactants:
+    - name: "Silver Leaf"
+      amount: "3 grams"
+    - name: "Crushed Pearl"
+      quality: "Grade-A"
+  catalyst: "Essence of Midnight"
+
+brewing_process:
+  steps:
+    - action: "Simmer"
+      temperature: 85
+      duration: "20 minutes"
+    - action: "Stir"
+      direction: "Counter-Clockwise"
+      revolutions: 13
+  
+safety_warnings:
+  - "Do not expose to direct sunlight during brewing."
+  - "Side effects may include temporary transparency."

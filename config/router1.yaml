@@ -1,0 +1,24 @@
+ship_id: "VOID-SEEKER-09"
+class: "Long-Range Recon"
+status: 
+  hull_integrity: 94%
+  fuel_levels:
+    antimatter: 0.72
+    thruster_gas: 0.15
+  onboard_ai: "Astra-V"
+
+crew_manifest:
+  - name: "Captain Elara Vance"
+    rank: "O-5"
+    specialization: "Astrogation"
+  - name: "Unit 7-Beta"
+    rank: "Specialist"
+    specialization: "Hazardous Repairs"
+
+cargo_bay:
+  inventory:
+    - item: "Cryo-Pod Spares"
+      quantity: 12
+    - item: "Emergency Rations"
+      quantity: 500
+  containment_status: "Stable"

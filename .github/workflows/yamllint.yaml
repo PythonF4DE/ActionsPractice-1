@@ -1,0 +1,12 @@
+name: Check YAML syntax
+on: workflow_dispatch
+jobs:
+  check-yaml:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: action/checkout@v5
+      - name: Check install lint
+        run: |
+          sudo apt-get install yamllint -y
+          yamllint ./config
