@@ -2,7 +2,7 @@ name: Check YAML syntax
 on:
   push:
     paths:
-      - "./config"
+      - "config/**"
 jobs:
   check-yaml:
     runs-on: ubuntu-latest
