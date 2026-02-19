@@ -19,4 +19,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ secrets.DOCKER_TOKEN }}/my-app:latest, ${{ secrets.DOCKER_TOKEN }}/my-app:${{ github.sha }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/my-app:latest, ${{ secrets.DOCKER_USERNAME }}/my-app:${{ github.sha }}
