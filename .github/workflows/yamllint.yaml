@@ -1,5 +1,8 @@
 name: Check YAML syntax
-on: workflow_dispatch
+on:
+  push:
+    paths:
+      - "./config/**"
 jobs:
   check-yaml:
     runs-on: ubuntu-latest
