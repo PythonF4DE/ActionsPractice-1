@@ -19,4 +19,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: false
-          tags: my-app:latest
+          tags: my-app:latest, my-app:${{ github.sha }}
