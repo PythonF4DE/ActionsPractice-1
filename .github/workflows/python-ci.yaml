@@ -11,3 +11,7 @@ jobs:
           python-version: "3.12"
       - name: Print cwd
         run: pwd
+      - name: Print cwd2
+        run: ls
+      - name: print sad
+        run: ls ..
