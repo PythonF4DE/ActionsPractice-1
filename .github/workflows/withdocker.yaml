@@ -1,7 +1,7 @@
 name: CI for Python project with Docker
 on: workflow_dispatch
 jobs:
-  Install-python-and-test:
+  Build-Docker-image-and-push:
     runs-on: ubuntu-latest
 
     steps:
