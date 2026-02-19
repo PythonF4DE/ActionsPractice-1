@@ -14,7 +14,7 @@ crew_manifest:
     specialization: "Astrogatsion"
   - name: "Unit 7-Beta"
     rank: "Specialist"
-    specialization: "Hazardous Repairs"
+    specialization: "Hazardous Repairs s"
 
 cargo_bay:
   inventory:
