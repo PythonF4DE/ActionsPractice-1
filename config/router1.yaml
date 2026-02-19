@@ -1,6 +1,7 @@
+---
 ship_id: "VOID-SEEKER-09"
 class: "Long-Range Recon"
-status: 
+status:
   hull_integrity: 94%
   fuel_levels:
     antimatter: 0.72

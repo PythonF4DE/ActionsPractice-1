@@ -1,3 +1,4 @@
+---
 potion_metadata:
   name: "Liquid Moonlight"
   potency_level: 8
@@ -20,7 +21,7 @@ brewing_process:
     - action: "Stir"
       direction: "Counter-Clockwise"
       revolutions: 13
-  
+
 safety_warnings:
   - "Do not expose to direct sunlight during brewing."
   - "Side effects may include temporary transparency."
