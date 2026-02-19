@@ -9,9 +9,18 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Print cwd
-        run: pwd
-      - name: Print cwd2
-        run: ls
-      - name: print sad
-        run: ls ..
+      # - name: Install Python dependencies alternative way
+      #   uses: py-actions/py-dependency-install@v4
+      #   with:
+      #     path: "requirements.txt"
+      #     update-pip: "true"
+      #     update-setuptools: "false"
+      #     update-wheel: "false"
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Testing Python
+        run: |
+          pip install pytest
+          pytest test_app.py
