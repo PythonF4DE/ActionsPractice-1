@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: action/checkout@v5
+      - uses: actions/checkout@v5
       - name: Check install lint
         run: |
           sudo apt-get install yamllint -y
