@@ -4,8 +4,6 @@ jobs:
   Build-Docker-image-and-push:
     runs-on: ubuntu-latest
     environment: production
-    steps:
-      - uses: actions/checkout@v5
-      - uses: ./github/workflows/docker-build.yaml
-        with:
-          push: ${{ github.ref == 'refs/heads/master' }}
+    uses: ./github/workflows/docker-build.yaml
+    with:
+      push: ${{ github.ref == 'refs/heads/master' }}
