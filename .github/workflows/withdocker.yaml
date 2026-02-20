@@ -5,3 +5,4 @@ jobs:
     uses: ./.github/workflows/docker-build.yaml
     with:
       push: ${{ github.ref == 'refs/heads/master' }}
+    secrets: inherit
