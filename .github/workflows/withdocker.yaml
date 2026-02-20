@@ -1,9 +1,9 @@
 name: CI for Python project with Docker
 on: workflow_dispatch
+environment: production
 jobs:
   Build-Docker-image-and-push:
     runs-on: ubuntu-latest
-    environment: production
     steps:
       - uses: actions/checkout@v5
       - name: Login to Docker Hub
