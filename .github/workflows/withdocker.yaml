@@ -3,7 +3,7 @@ on: workflow_dispatch
 jobs:
   Build-Docker-image-and-push:
     runs-on: ubuntu-latest
-
+    envirnonment: production
     steps:
       - uses: actions/checkout@v5
       - name: Login to Docker Hub
@@ -27,5 +27,3 @@ jobs:
         with:
           push: false
           tags: ${{ secrets.DOCKER_USERNAME }}/my-app:latest, ${{ secrets.DOCKER_USERNAME }}/my-app:${{ github.sha }}
-      - name: Debug branch
-        run: echo "Current ref is ${{ github.ref }}"
