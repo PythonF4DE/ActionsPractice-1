@@ -21,9 +21,9 @@ jobs:
         with:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/my-app:latest, ${{ secrets.DOCKER_USERNAME }}/my-app:${{ github.sha }}
-      - name: Build
-        if: github.ref != "refs/heads/main"
-        uses: docker/build-push-action@v6
-        with:
-          push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/my-app:latest, ${{ secrets.DOCKER_USERNAME }}/my-app:${{ github.sha }}
+      # - name: Build
+      #   if: github.ref != "refs/heads/main"
+      #   uses: docker/build-push-action@v6
+      #   with:
+      #     push: true
+      #     tags: ${{ secrets.DOCKER_USERNAME }}/my-app:latest, ${{ secrets.DOCKER_USERNAME }}/my-app:${{ github.sha }}
