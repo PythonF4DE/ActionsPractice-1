@@ -27,3 +27,5 @@ jobs:
         with:
           push: false
           tags: ${{ secrets.DOCKER_USERNAME }}/my-app:latest, ${{ secrets.DOCKER_USERNAME }}/my-app:${{ github.sha }}
+      - name: Debug branch
+        run: echo "Current ref is ${{ github.ref }}"
