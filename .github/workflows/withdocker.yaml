@@ -3,7 +3,7 @@ on: workflow_dispatch
 jobs:
   Build-Docker-image-and-push:
     runs-on: ubuntu-latest
-    envirnonment: production
+    environment: production
     steps:
       - uses: actions/checkout@v5
       - name: Login to Docker Hub
