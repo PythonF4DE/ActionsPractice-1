@@ -7,4 +7,4 @@ jobs:
     steps:
       - uses: ./github/workflows/docker-build.yaml
         with:
-          push: ${{ github.ref == "refs/heads/master" }}
+          push: ${{ github.ref == 'refs/heads/master' }}
