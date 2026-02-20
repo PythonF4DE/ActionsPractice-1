@@ -1,7 +1,7 @@
 name: CI for Python project with Docker
 on: workflow_dispatch
 jobs:
-  Build-Docker-image-and-push:
-    uses: ./github/workflows/docker-build.yaml
+  build:
+    uses: ./.github/workflows/docker-build.yaml
     with:
       push: ${{ github.ref == 'refs/heads/master' }}
