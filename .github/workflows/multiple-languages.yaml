@@ -34,11 +34,6 @@ jobs:
         with:
           go-version: 1.20
 
-      - name: Install Go dependencies
-        run: |
-          cd go
-          go get .
-
       - name: Build code
         run: |
           cd go
