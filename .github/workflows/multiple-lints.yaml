@@ -1,6 +1,7 @@
 name: Lint multiple Languages
 on:
-  push
+  push:
+  pull:
 jobs:
 
   yaml-lint:
