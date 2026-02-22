@@ -41,6 +41,7 @@ jobs:
 
       - name: Test Go
         run: |
+          cd go
           go test
 
 
