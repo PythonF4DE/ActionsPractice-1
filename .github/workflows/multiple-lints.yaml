@@ -1,7 +1,6 @@
 name: Lint multiple Languages
 on:
-  push:
-  pull:
+  push
 jobs:
 
   yaml-lint:
@@ -38,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     if: contains(github.event.head_commit.modified, './nodelint')
 
-    setps:
+    steps:
       - uses: actions/checkout@v5
 
       - name: Setup Node
