@@ -37,7 +37,7 @@ jobs:
       - name: Install Go dependencies
         run: |
           cd go
-          go mod download
+          go get .
 
       - name: Build code
         run: |
