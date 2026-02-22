@@ -54,17 +54,17 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18.19.1
 
-      - name: Install Node.js dependencies
+      - name: Install Node dependencies
         run: |
           cd node
           npm ci
 
-      - name: Build and test Node.js code
+      - name: Build and test Node code
         run: |
           cd node
           npm run build --if-present
