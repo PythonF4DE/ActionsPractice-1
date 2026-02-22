@@ -62,7 +62,7 @@ jobs:
       - name: Install Node dependencies
         run: |
           cd node
-          npm ci
+          npm install
 
       - name: Build and test Node code
         run: |
