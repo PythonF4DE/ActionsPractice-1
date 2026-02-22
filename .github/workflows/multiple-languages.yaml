@@ -52,21 +52,20 @@ jobs:
   test-node.js:
     runs-on: ubuntu-latest
     steps:
-      steps:
-        - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
 
-        - name: Setup Node.js
-          uses: actions/setup-node@v4
-          with:
-            node-version: 18.19.1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.19.1
 
-        - name: Install Node.js dependencies
-          run: |
-            cd node
-            npm ci
+      - name: Install Node.js dependencies
+        run: |
+          cd node
+          npm ci
 
-        - name: Build and test Node.js code
-          run: |
-            cd node
-            npm run build --if-present
-            npm test
+      - name: Build and test Node.js code
+        run: |
+          cd node
+          npm run build --if-present
+          npm test
