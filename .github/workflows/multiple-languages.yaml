@@ -49,7 +49,7 @@ jobs:
           go test
 
 
-  test-node.js:
+  test-node:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
