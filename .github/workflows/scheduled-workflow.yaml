@@ -1,4 +1,4 @@
-name: Add labels upon opening PR
+name: Scheduled workflow
 
 on:
   schedule:
