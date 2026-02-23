@@ -17,6 +17,4 @@ jobs:
 
       - name: Upload the coverage report artifact
         run: |
-          ls
-          ls python/
           ls python/htmlcov/
