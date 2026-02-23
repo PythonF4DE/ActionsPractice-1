@@ -35,5 +35,6 @@ jobs:
           path: "pages/"
 
       - name: Deploy the page
+        if: contains(github.event.head_commit.message, '[deploy]')
         id: deployment
         uses: actions/deploy-pages@v4
