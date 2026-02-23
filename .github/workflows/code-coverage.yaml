@@ -14,3 +14,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest pytest-cov
           pytest --cov=. --cov-report=html
+
+      - name: Upload the coverage report artifact
+        run: |
+          ls
+          ls python/
+          ls python/htmlcov/
