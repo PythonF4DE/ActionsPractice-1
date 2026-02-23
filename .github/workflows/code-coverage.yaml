@@ -1,0 +1,16 @@
+name: Code coverage workflow
+on: workflow_dispatch
+jobs:
+  code-coverage:
+
+  runs-on: ubuntu-latest
+
+  steps:
+    - uses: actions/checkout@v5
+
+    - name: Run code coverage
+      run: |
+        cd python
+        python -m pip install --upgrade pip
+        pip install pytest pytest-cov
+        pytest --cov=. --cov-report=html
