@@ -1,0 +1,10 @@
+name: Remote reusable workflow
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    uses: https://github.com/PythonF4DE/reusable-workflows.git/.github/workflows/build.yaml
+    with:
+      push: true
+    secrets: inherit
