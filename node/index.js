@@ -3,7 +3,7 @@ function add(a, b) {
 }
 
 function divide(a, b) {
-  if (b === 0) throw new Error("Cannot divide by zero 0");
+  if (b === 0) throw new Error("Cannot divide by zero 00");
   return a / b;
 }
 
