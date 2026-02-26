@@ -56,4 +56,4 @@ jobs:
       - name: Run only if all previous jobs succeeded
         run: |
           echo "Success!"
-        if: ${{ success }}
+        if: success()
