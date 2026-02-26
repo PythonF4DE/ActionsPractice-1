@@ -33,7 +33,7 @@ jobs:
       - name: Failing step
         run: |
           clown 44
-        # continue-on-error: true
+        continue-on-error: true
 
   dir:
 
@@ -45,3 +45,15 @@ jobs:
       - name: Print insides of a folder
         run: |
           dir
+
+  success:
+
+    needs: dir
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run only if all previous jobs succeeded
+        run: |
+          echo "Success!"
+        if: ${{ success }}
