@@ -48,6 +48,8 @@ jobs:
 
   success:
 
+    if: success()
+
     needs: dir
 
     runs-on: ubuntu-latest
@@ -56,4 +58,3 @@ jobs:
       - name: Run only if all previous jobs succeeded
         run: |
           echo "Success!"
-        if: success()
