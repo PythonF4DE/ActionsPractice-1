@@ -1,0 +1,47 @@
+name: Practice of some job conditions
+
+on: workflow_call
+
+jobs:
+  pwd:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print current working directory
+        run: |
+          pwd
+
+  whoami:
+
+    needs: pwd
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print current user
+        run: |
+          whoami
+
+  failing:
+
+    needs: whoami
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Failing step
+        run: |
+          clown 44
+        continue-on-error: true
+
+  dir:
+
+    needs: failing
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print insides of a folder
+        run: |
+          dir
