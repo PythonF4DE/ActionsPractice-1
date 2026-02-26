@@ -1,6 +1,6 @@
 name: Practice of some job conditions
 
-on: workflow_call
+on: workflow_dispatch
 
 jobs:
   pwd:
