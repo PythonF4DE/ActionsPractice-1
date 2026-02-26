@@ -33,7 +33,7 @@ jobs:
       - name: Failing step
         run: |
           clown 44
-        continue-on-error: true
+        # continue-on-error: true
 
   dir:
 
